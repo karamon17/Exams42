@@ -28,7 +28,7 @@ void sendall(int n){
 }
 int main(int argc, char **argv){
 	if(argc !=2)
-		fterror(0);
+		fterror("Wrong number of arguments");
 	int serv = socket(2,1,0);
 	if(serv < 0)
 		fterror(0);
